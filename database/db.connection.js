@@ -12,10 +12,10 @@ var _util = _interopRequireDefault(require("util"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const connection = _mysql.default.createConnection({
-  host: 'localhost',
-  user: 'chitroko_ahnaf',
-  database: 'chitroko_test_db',
-  password: '607tsVilla!'
+  host: 'mysql.mi-equipment.com',
+  user: 'ahnaf',
+  database: 'join_us',
+  password: '12345678'
 });
 
 const query = _util.default.promisify(connection.query).bind(connection);

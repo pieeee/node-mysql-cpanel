@@ -2,10 +2,10 @@ import mysql from 'mysql'
 import util from 'util'
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'chitroko_ahnaf',
-  database: 'chitroko_test_db',
-  password: '607tsVilla!',
+  host: 'mysql.mi-equipment.com',
+  user: 'ahnaf',
+  database: 'join_us',
+  password: '12345678',
 })
 
 const query = util.promisify(connection.query).bind(connection)
