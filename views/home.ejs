@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>JOIN US</title>
+</head>
+
+<body>
+
+        <div class="d-flex align-items-center justify-content-center" style="height: 100vh;">
+            <div class="container p-5 d-flex flex-column align-items-center">
+                <h3 class="mb-4">JOIN US</h3>
+                <p>ENTER your email to join us,
+                    <strong>
+                        <%=data%>
+                    </strong> others on our waitlist.
+                </p>
+                <form action="/register" method="POST">
+                    <div class="form-group row g-2">
+                        <div class="col-auto">
+                            <input type="email" name="email" id="" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-primary">Join Now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
