@@ -33,11 +33,11 @@ app.post('/register', async (req, res) => {
   }
 })
 
-// app.listen(port, (err) => {
-//   if (err) {
-//     console.log(error)
-//   }
-//   console.log('🚀 Server Running On Port: ' + port)
-// })
+app.listen(port, (err) => {
+  if (err) {
+    console.log(error)
+  }
+  console.log('🚀 Server Running On Port: ' + port)
+})
 
-app.listen()
+
