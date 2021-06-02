@@ -8,6 +8,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _db.dbConnect)();
 const app = (0, _express.default)();
+const port = 8080 || process.env.PORT;
 app.set('view engine', 'ejs');
 app.use(_express.default.json());
 app.use(_express.default.urlencoded({
@@ -40,11 +41,11 @@ app.post('/register', async (req, res) => {
       error
     });
   }
-}); // app.listen(port, (err) => {
-//   if (err) {
-//     console.log(error)
-//   }
-//   console.log('🚀 Server Running On Port: ' + port)
-// })
+});
+app.listen(port, err => {
+  if (err) {
+    console.log(error);
+  }
 
-app.listen();
+  console.log('🚀 Server Running On Port: ' + port);
+});

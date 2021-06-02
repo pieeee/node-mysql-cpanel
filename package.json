@@ -4,7 +4,7 @@
   "description": "Node.js-Express-Mysql-cPanel Deploy",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir .",
+    "build": "babel src --out-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec yarn restart",
     "restart": "rimraf dist && yarn build && yarn start",

@@ -5,6 +5,8 @@ dbConnect()
 
 const app = express()
 
+const port = 8080 || process.env.PORT
+
 app.set('view engine', 'ejs')
 
 app.use(express.json())
