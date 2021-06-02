@@ -13,8 +13,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const connection = _mysql.default.createConnection({
   host: 'localhost',
-  user: 'root',
-  database: 'chitroko_test_db'
+  user: 'chitroko_ahnaf',
+  database: 'chitroko_test_db',
+  password: '607tsVilla!'
 });
 
 const query = _util.default.promisify(connection.query).bind(connection);

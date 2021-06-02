@@ -3,8 +3,9 @@ import util from 'util'
 
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'root',
+  user: 'chitroko_ahnaf',
   database: 'chitroko_test_db',
+  password: '607tsVilla!',
 })
 
 const query = util.promisify(connection.query).bind(connection)

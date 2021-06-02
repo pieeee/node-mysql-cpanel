@@ -1,11 +1,9 @@
-import express, { json } from 'express'
+import express from 'express'
 import { dbConnect, query } from './database/db.connection'
-import path from 'path'
 
 dbConnect()
 
 const app = express()
-const port = 8080 || process.env.PORT
 
 app.set('view engine', 'ejs')
 
@@ -33,9 +31,11 @@ app.post('/register', async (req, res) => {
   }
 })
 
-app.listen(port, (err) => {
-  if (err) {
-    console.log(error)
-  }
-  console.log('🚀 Server Running On Port: ' + port)
-})
+// app.listen(port, (err) => {
+//   if (err) {
+//     console.log(error)
+//   }
+//   console.log('🚀 Server Running On Port: ' + port)
+// })
+
+app.listen()
