@@ -20,6 +20,8 @@ app.get('/', async (req, res) => {
   }
 })
 
+
+
 app.post('/register', async (req, res) => {
   try {
     const person = { email: req.body.email }
